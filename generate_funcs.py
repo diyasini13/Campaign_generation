@@ -20,7 +20,7 @@ MODEL_IMAGEN = "imagen-3.0-generate-002"
 # os.environ['GOOGLE_CLOUD_PROJECT'] = ''
 
 # # --- Initialize Gemini and Vertex AI ---
-# genai.configure(api_key=GOOGLE_API_KEY)
+
 # aiplatform.init(project=PROJECT_ID, location=LOCATION)
     # Initialize Vertex AI with the project ID and location
 vertexai.init(project=PROJECT_ID, location="us-central1")
