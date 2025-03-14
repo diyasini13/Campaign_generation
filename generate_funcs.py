@@ -16,8 +16,8 @@ LOCATION = "us-central1"  # Replace with your location
 MODEL_GEMINI = "gemini-1.5-flash-002"
 MODEL_IMAGEN = "imagen-3.0-generate-002"
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = './genail300-3fe21cbaf3ee.json'
-os.environ['GOOGLE_CLOUD_PROJECT'] = 'genail300'
+# os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = './path-to-credential'
+# os.environ['GOOGLE_CLOUD_PROJECT'] = ''
 
 # # --- Initialize Gemini and Vertex AI ---
 # genai.configure(api_key=GOOGLE_API_KEY)
