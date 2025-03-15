@@ -11,7 +11,7 @@ from vertexai.generative_models import Image as image_gen , Part
 
 
 # --- Configuration ---
-PROJECT_ID = "genail300"  # Replace with your project ID
+PROJECT_ID = "heroprojectlivedemo"  # Replace with your project ID
 LOCATION = "us-central1"  # Replace with your location
 MODEL_GEMINI = "gemini-1.5-flash-002"
 MODEL_IMAGEN = "imagen-3.0-generate-002"
