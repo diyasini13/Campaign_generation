@@ -13,7 +13,7 @@ from vertexai.generative_models import Image as image_gen , Part
 # --- Configuration ---
 PROJECT_ID = "heroprojectlivedemo"  # Replace with your project ID
 LOCATION = "us-central1"  # Replace with your location
-MODEL_GEMINI = "gemini-1.5-flash-002"
+MODEL_GEMINI = "gemini-2.0-flash-001"
 MODEL_IMAGEN = "imagen-3.0-generate-002"
 
 # os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = './path-to-credential'
