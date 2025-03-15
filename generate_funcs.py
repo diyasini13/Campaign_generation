@@ -30,6 +30,11 @@ def generate_text_gemini(prompt):
     response = model.generate_content(f"""Write a cheerful email for a sales campaign based on the : {prompt} """)
     return response.text
 
+def generate_insta_gemini(prompt):
+    model =  GenerativeModel(MODEL_GEMINI)
+    response = model.generate_content(f"""Write a cheerful insta post/story content for a sales campaign based on the : {prompt} """)
+    return response.text
+
 def generate_image_imagen(prompt):
     output_file = "./generated_image.png" 
     generation_model = ImageGenerationModel.from_pretrained(MODEL_IMAGEN)
