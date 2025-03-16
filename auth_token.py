@@ -27,7 +27,7 @@ def authentication():
             return "Error"
 
     # Get the token from the query parameter
-    token = st.experimental_get_query_params().get("token", [""])[0]
+    token = st.query_params().get("token", [""])[0]
 
     if not token:
         st.error("Unauthorized access. Token not provided.")
@@ -42,9 +42,5 @@ def authentication():
     elif decoded == "Error":
         st.error("Error in token verification. Access denied.")
         st.stop()
-    else:
-        st.write("Welcome! You are authenticated.")
-        # You can now use the user information from 'decoded'
-        # st.write(f"User Email: {decoded['email']}")
-        # st.write(f"User Name: {decoded['name']}")
-        # st.write(f"User ID: {decoded['sub']}")
+    
+        
